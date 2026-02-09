@@ -1,46 +1,45 @@
-# ShopEasy — Java E-Commerce Web Application
-This is **ShopEasy**, a simple e-commerce web application built with **Java Servlets, JSP, JDBC, XML configuration, and deployed on Apache Tomcat**.
-It connects to a **MySQL database** to store order details and customer information.
+# 🛍️ ShopEasy — JSP + JDBC E-Commerce Web Application
+ShopEasy is a comprehensive full-stack **e-commerce web application** built using **Java Server Pages (JSP)**, **JDBC**, and **Apache Tomcat**. It integrates all components into a complete, database-driven online shopping system that supports product browsing, ordering, customer management, and basic admin operations.
+-> 💡 This project demonstrates real-world Java web development using Servlets/JSP, MySQL, session handling, and MVC-style architecture.
 
-## 🚀 Features
-- View list of products available for purchase
-- User can place orders through a form
-- Orders are stored in **MySQL** database
-- JSP pages used for UI
-- Servlet controllers handle business logic
-- Uses MVC-style structure (JSP + Servlets)
+## 📌 Features
+### ✔️ User Features
+- Browse products with dynamic listings (`products.jsp`)
+- Place orders and view order history (`placeOrder.jsp`, `orders.jsp`)
+- Contact support (`contact.jsp`)
+- Messaging view for user support responses (`view_messages.jsp`)
+- Session-based login and shopping behavior
 
-## 📂 Project Structure
-ShopEasy/
-│
-├── WebContent/ # Web files (JSP pages + HTML + CSS)
-│ ├── index.jsp
-│ ├── products.jsp
-│ ├── placeOrder.jsp
-│ ├── orders.jsp
-│ ├── customers.jsp
-│ ├── contact.jsp
-│ └── view_messages.jsp
-│
-├── WEB-INF/ # Deployment descriptor + web.xml
-│ ├── web.xml
-│ └── lib/
-│
-├── src/ # Java source files
-│ └── com/shopeasy/util/
-│ └── Database util classes
-│
-├── README.md
-└── .gitignore
+### ✔️ Admin Features (Extendable)
+- View all customers (`customers.jsp`)
+- Manage orders (view, process) (`orders.jsp`)
+- Future admin panels may include product add/edit/delete
+
+### ✔️ Core Backend
+- Java Servlets and JSP for presentation & logic
+- JDBC for database connectivity
+- Database driven product & order management
+- Reusable utility classes for DB connections
+
+## 🧠 Tech Stack
+
+| Layer      |                       Technologies |
+|------------|------------------------------------|
+| Backend    |                Java, JSP, Servlets |
+| Database   |                              MySQL |
+| Connection |                               JDBC |
+| Server     |                      Apache Tomcat |
+| Frontend   |    HTML, CSS, Bootstrap (optional) |
 
 
-## 🛠️ Technologies Used
+## 🛠️ Prerequisites
+Before running ShopEasy locally, make sure you have the following installed:
 
-| Category              |                          Technology |
-|-----------------------|-------------------------------------|
-| Backend               |                       Java Servlets |
-| Frontend              |             JSP (Java Server Pages) |
-| Database              |                               MySQL |
-| Web Server            |                       Apache Tomcat |
-| Database Connectivity |                                JDBC |
-| Build                 | Manual or Eclipse/IDE configuration |
+✔️ **Java JDK** (8 or above)  
+✔️ **Apache Tomcat** (9+)  
+✔️ **MySQL Server**  
+✔️ A Java IDE such as **Eclipse IDE for Enterprise Java & Web Developers**
+
+
+## 📁 Project Structure
+
